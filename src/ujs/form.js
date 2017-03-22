@@ -4,7 +4,7 @@ import dom from "./dom";
 export default function(form) {
   if(dom.isRemote(form)) {
     var data = "";
-    if(false && typeof FormData !== 'undefined')
+    if(false && typeof FormData !== 'undefined') {
       data = new FormData(form)
     } else {
       var urlEncodedDataPairs = [];
